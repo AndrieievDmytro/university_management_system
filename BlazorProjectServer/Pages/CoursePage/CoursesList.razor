@@ -1,0 +1,43 @@
+﻿@page "/courses"
+
+<h3><u>Courses</u></h3>
+
+@if (Courses == null)
+{
+    <img src="https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif" alt="Loading" />
+}
+else if (Courses.Count == 0)
+{
+    <span>There are no courses</span>
+    <tr>
+        <button onclick="history.go(-1); return false;" style="background-color: red;">
+            Return to Home Page
+        </button>
+    </tr>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                
+                <th @onclick="()=>OnAttributeClick(s => s.CourseTag)">Course Tag</th>
+                <th @onclick="()=>OnAttributeClick(s => s.CourseProgram)">Course Program</th>
+                <th @onclick="()=>OnAttributeClick(s => s.CourseDescription)">Course Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var s in Courses)
+            {
+                <tr>
+                    <td @onclick="() => OnCourseRawClick(s.CourseId)">@s.CourseTag</td>
+                    <td @onclick="() => OnCourseRawClick(s.CourseId)">@s.CourseProgram</td>
+                    <td @onclick="() => OnCourseRawClick(s.CourseId)">@s.CourseDescription</td>
+                </tr>
+            }
+        </tbody>
+        <button onclick="history.go(-1); return false;" style="background-color: red;">
+            Return to Home Page
+        </button>
+    </table>
+}

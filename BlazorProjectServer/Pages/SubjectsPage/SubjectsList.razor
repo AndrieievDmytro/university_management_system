@@ -1,0 +1,46 @@
+@page "/courses/subjects/{CourseId:int}"
+
+
+@* @{var result = @tag.CourseTag;} *@
+
+<h3><u> Subjects </u></h3>
+
+@if (Subjects == null)
+{
+    <img src="https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif" alt="Loading" />
+}
+else if (Subjects.Count == 0)
+{
+    <span>There are no subjects</span>
+    <tr>
+    <button onclick="history.go(-1); return false;" style="background-color: red;">
+            Return to Courses
+        </button>
+    </tr>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th @onclick="()=>OnAttributeClick(s => s.Name)">Subject Name</th>
+                <th @onclick="()=>OnAttributeClick(s => s.Type)">Subject Type</th>
+                <th @onclick="()=>OnAttributeClick(s => s.Topics)">Subject Topic</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var s in Subjects)
+            {
+                <tr>
+                    <td @onclick="() => OnSubjectRawClick(s.SubjectId)">@s.Name</td>
+                    <td @onclick="() => OnSubjectRawClick(s.SubjectId)">@s.Type</td>
+                    <td @onclick="() => OnSubjectRawClick(s.SubjectId)">@s.Topics</td>
+                </tr>
+
+            }
+        </tbody>
+        <button onclick="history.go(-1); return false;" style="background-color: red;">
+            Return to Courses
+        </button>
+    </table>
+}

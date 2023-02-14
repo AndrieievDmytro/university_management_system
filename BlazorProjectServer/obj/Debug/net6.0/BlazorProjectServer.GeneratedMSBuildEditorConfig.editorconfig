@@ -1,0 +1,56 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BlazorProjectServer
+build_property.RootNamespace = BlazorProjectServer
+build_property.ProjectDir = d:\ProjectFolder\c_sharp\MAS\FinalProject\BlazorProjectServer\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = d:\ProjectFolder\c_sharp\MAS\FinalProject\BlazorProjectServer
+build_property._RazorSourceGeneratorDebug = 
+
+[d:/ProjectFolder/c_sharp/MAS/FinalProject/BlazorProjectServer/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ProjectFolder/c_sharp/MAS/FinalProject/BlazorProjectServer/Pages/AssignmentsPage/AssignmentsList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNzaWdubWVudHNQYWdlXEFzc2lnbm1lbnRzTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ProjectFolder/c_sharp/MAS/FinalProject/BlazorProjectServer/Pages/AssignmentsPage/AssignmentsView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXNzaWdubWVudHNQYWdlXEFzc2lnbm1lbnRzVmlldy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ProjectFolder/c_sharp/MAS/FinalProject/BlazorProjectServer/Pages/CoursePage/CoursesList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlUGFnZVxDb3Vyc2VzTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ProjectFolder/c_sharp/MAS/FinalProject/BlazorProjectServer/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ProjectFolder/c_sharp/MAS/FinalProject/BlazorProjectServer/Pages/SubjectsPage/SubjectsList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdHNQYWdlXFN1YmplY3RzTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ProjectFolder/c_sharp/MAS/FinalProject/BlazorProjectServer/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/ProjectFolder/c_sharp/MAS/FinalProject/BlazorProjectServer/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-h5o7fvz5a1
+
+[d:/ProjectFolder/c_sharp/MAS/FinalProject/BlazorProjectServer/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-uvh0xrho7s
+
+[d:/ProjectFolder/c_sharp/MAS/FinalProject/BlazorProjectServer/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

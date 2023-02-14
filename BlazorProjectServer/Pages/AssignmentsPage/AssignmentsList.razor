@@ -1,0 +1,42 @@
+@page "/courses/subjects/assignments/{SubjectId:int}"
+
+<h3><u>Assignments</u></h3>
+
+@if (Assignments == null)
+{
+    <img src="https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif" alt="Loading" />
+}
+else if (Assignments.Count == 0)
+{
+    <span>There are no assignments</span>
+    <tr>
+    <button onclick="history.go(-1); return false;" style="background-color: red;">
+            Return to Subjects
+        </button>
+    </tr>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th @onclick="()=>OnAttributeClick(s => s.Name)">Assignment Name</th>
+                <th @onclick="()=>OnAttributeClick(s => s.StartDate)">Start date</th>
+                <th @onclick="()=>OnAttributeClick(s => s.EndDate)">End date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var s in Assignments)
+            {
+                <tr>
+                    <td @onclick="() => OnSubjectRawClick(s.AssignmentId)">@s.Name</td>
+                    <td @onclick="() => OnSubjectRawClick(s.AssignmentId)">@s.StartDate</td>
+                    <td @onclick="() => OnSubjectRawClick(s.AssignmentId)">@s.EndDate</td>
+                </tr>
+            }
+        </tbody>
+        <button onclick="history.go(-1); return false;" style="background-color: red;">
+            Return to Subjects
+        </button>
+    </table>
+}

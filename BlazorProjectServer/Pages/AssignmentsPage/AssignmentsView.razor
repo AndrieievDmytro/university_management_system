@@ -1,0 +1,31 @@
+@page "/courses/subjects/assignments/assignment/{AssignmentId:int}"
+
+<h3><u>Assignments's details</u></h3>
+
+@if (Assignments == null)
+{
+    <img src="https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif" alt="Loading" />
+}
+else
+{
+
+    <div class="row">
+        <div class="column" style="width: 15%;">
+            <p>Name</p>
+            <p>Description</p>
+            <p>StartDate</p>
+            <p>EndDate</p>
+            <p> 
+                <button onclick="history.go(-1); return false;" style="background-color: red;">
+                    Return to Assignments
+                </button>
+            </p>
+        </div>
+        <div class="column" style="width: 15%;">
+            <p>@Assignments.Name</p>
+            <p>@Assignments.Description</p>
+            <p>@Assignments.StartDate</p>
+            <p>@Assignments.EndDate</p>
+        </div>
+    </div>
+}
